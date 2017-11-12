@@ -1,6 +1,7 @@
 package edu.jvillavi.FileTester;
 
 import java.io.File;
+import org.apache.commons.lang3.StringUtils;
 
 /**
  * Punto de entrada aplicacion
@@ -15,6 +16,9 @@ public class App {
 	 */
 	public void mostrarArchivosDirectorio(String directorio) {
 		try {
+			
+			StringUtils.capitalize("Alfa");
+			
 			File[]archivos = Utils.obtenerListaObjetos("/home/jvillavi");
 			
 			if(archivos!=null) {
