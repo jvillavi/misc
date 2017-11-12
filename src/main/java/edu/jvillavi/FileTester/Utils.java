@@ -12,7 +12,7 @@ public class Utils {
 	 */
 	public static File[] obtenerListaObjetos(String directorio)throws Exception{
 		
-		File root = null;
+		File root = null; // origen
 		File[] objetos = null;
 	
 		try{
