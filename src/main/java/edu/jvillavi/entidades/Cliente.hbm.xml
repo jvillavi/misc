@@ -1,0 +1,11 @@
+<hibernate-mapping package="edu.jvillavi.entidades">
+
+    <class name="Cliente" table="cliente">
+        <id name="identificacion" column="identificacion">
+        </id>
+        <property name="nombres"/>
+        <property name="apellidos"/>
+        <property name="fechaNacimiento"/>
+    </class>
+
+</hibernate-mapping>
