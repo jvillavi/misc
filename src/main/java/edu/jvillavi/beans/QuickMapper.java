@@ -1,19 +1,13 @@
 package edu.jvillavi.beans;
 
-import java.util.ArrayList;
-import java.util.Collections;
-import java.util.List;
-
+import java.util.Arrays;
 import org.dozer.DozerBeanMapper;
 import org.dozer.Mapper;
 
 public class QuickMapper {
 	public static void main(String[] args) {
 		
-		List<String> dozerConfigs = new ArrayList<String>();
-		dozerConfigs.add("MappingCliente.xml");
-		
-		Mapper mapper = new DozerBeanMapper(dozerConfigs);
+		Mapper mapper = new DozerBeanMapper(Arrays.asList("MappingCliente.xml"));
 		
 		ClienteDTO clienteOrigen = new ClienteDTO();
 		clienteOrigen.setIdentificacion("0923817043");
@@ -23,5 +17,7 @@ public class QuickMapper {
 		Cliente cliente = mapper.map(clienteOrigen,Cliente.class);
 		
 		System.out.println(cliente.getId());
+		System.out.println(cliente.getNombres());
+		System.out.println(cliente.getApellidos());
 	}
 }

@@ -2,9 +2,19 @@
 <mappings xmlns="http://dozer.sourceforge.net" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://dozer.sourceforge.net http://dozer.sourceforge.net/schema/beanmapping.xsd">
 	<mapping>
-		<class-a map-get-method="getIdentificacion" map-set-method="setIdentificacion">edu.jvillavi.beans.ClienteDTO
-		</class-a>
-		<class-b map-get-method="getId" map-set-method="setId">edu.jvillavi.beans.Cliente
-		</class-b>
+		<class-a>edu.jvillavi.beans.ClienteDTO</class-a>
+		<class-b>edu.jvillavi.beans.Cliente</class-b>
+		<field>
+			<a>identificacion</a>
+			<b>id</b>
+		</field>
+		<field>
+			<a>nombres</a>
+			<b>nombres</b>
+		</field>
+		<field>
+			<a>apellidos</a>
+			<b>apellidos</b>
+		</field>
 	</mapping>
 </mappings>
